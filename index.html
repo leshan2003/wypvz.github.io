@@ -141,7 +141,7 @@
         }
         /* 植物选择框单元样式 */
         .plantui{
-            width: 100px;
+            width: 130px;
             height: 60px;
             font-weight: 700;
             padding-left: 60px;
@@ -364,62 +364,46 @@
         // 定义植物属性
         var PlantUte = {
             // 豌豆向日葵
-            SunFlower:{
+            PeaSunflower:{
                 name:"豌豆向日葵",
                 price:50,
-                uisrc1:"./images/cards/plants/wdxrk.png",
-                uisrc2:"./images/cards/plants/wdxrkG.png",
-                datasrc:"./images/plants/wdxrk/idle/idle_0.png",
-                url:"./images/plants/wdxrk/idle/idle_",
-                count:0,
-                hp:100,
-                attack:5,
-                speed:500,
-                range:500,
-                color:"red"
-            },
-            // 初级豌豆射手
-            Peashooter:{
-                name:"初级豌豆射手",
-                price:50,
-                uisrc1:"./images/cards/plants/Peashooter.png",
-                uisrc2:"./images/cards/plants/PeashooterG.png",
-                datasrc:"./images/plants/peashooter/attack/attack_0.png",
-                url:"./images/plants/peashooter/attack/attack_",
-                count:7,
+                uisrc1:"./images/cards/plants/PeaSunflower.png",
+                uisrc2:"./images/cards/plants/PeaSunflowerG.png",
+                datasrc:"./images/plants/PeaSunflower/idle/idle_0.png",
+                url:"./images/plants/PeaSunflower/idle/idle_",
+                count:101,
                 hp:100,
                 attack:5,
                 speed:500,
                 range:500,
                 color:"chartreuse"
             },
-            // 中级豌豆射手
-            Repeater:{
-                name:"中级豌豆射手",
+            FumeShroom:{
+                name:"大喷菇",
+                price:75,
+                uisrc1:"./images/cards/plants/FumeShroom.png",
+                uisrc2:"./images/cards/plants/FumeShroomG.png",
+                datasrc:"./images/plants/FumeShroom/idle/idle_0.png",
+                url:"./images/plants/FumeShroom/idle/idle_",
+                count:77,
+                hp:100,
+                attack:10,
+                speed:500,
+                range:500,
+                color:"purple"
+            },
+            // 三重射手
+            TripleShooter:{
+                name:"三重射手",
                 price:100,
-                uisrc1:"./images/cards/plants/Repeater.png",
-                uisrc2:"./images/cards/plants/RepeaterG.png",
-                datasrc:"./images/plants/repeater/attack/attack_0.png",
-                url:"./images/plants/repeater/attack/attack_",
-                count:14,
+                uisrc1:"./images/cards/plants/TripleShooter.png",
+                uisrc2:"./images/cards/plants/TripleShooterG.png",
+                datasrc:"./images/plants/TripleShooter/idle/idle_0.png",
+                url:"./images/plants/TripleShooter/idle/idle_",
+                count:90,
                 hp:100,
                 attack:10,
-                speed:500,
-                range:500,
-                color:"chartreuse"
-            },
-            // 高级豌豆射手
-            GatlingPea:{
-                name:"高级豌豆射手",
-                price:200,
-                uisrc1:"./images/cards/plants/GatlingPea.png",
-                uisrc2:"./images/cards/plants/GatlingPeaG.png",
-                datasrc:"./images/plants/gatlingpea/attack/attack_0.png",
-                url:"./images/plants/gatlingpea/attack/attack_",
-                count:12,
-                hp:100,
-                attack:10,
-                speed:300,
+                speed:200,
                 range:500,
                 color:"chartreuse"
             },
@@ -438,15 +422,15 @@
                 range:57,
                 color:"rgba(0,0,0,0)"
             },
-            // 食人花
-            Chomper:{
-                name:"食人花",
+            // 咖喱食人花
+            GarlicFlower:{
+                name:"咖喱食人花",
                 price:300,
-                uisrc1:"./images/cards/plants/Chomper.png",
-                uisrc2:"./images/cards/plants/ChomperG.png",
-                datasrc:"./images/plants/chomper/attack/attack_0.png",
-                url:"./images/plants/chomper/attack/attack_",
-                count:8,
+                uisrc1:"./images/cards/plants/GarlicFlower.png",
+                uisrc2:"./images/cards/plants/GarlicFlowerG.png",
+                datasrc:"./images/plants/GarlicFlower/idle/idle_0.png",
+                url:"./images/plants/GarlicFlower/idle/idle_",
+                count:75,
                 hp:100,
                 attack:20,
                 speed:100,
@@ -468,6 +452,132 @@
                 range:0,
                 color:"red"
             }
+        }
+
+        var ZombieUte = {
+            // 普通僵尸
+            NormalZombie:{
+                name:"普通僵尸",
+                hp:100,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/Normal/run/run_0.png",
+                url:"./images/zombies/Normal/run/run_",
+                count:30
+            },
+            // 普通舞王
+            NormalDancingKing:{
+                name:"普通舞王",
+                hp:100,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/NormalDancingKing/run/run_0.png",
+                url:"./images/zombies/NormalDancingKing/run/run_",
+                count:96
+            },
+            ArmedDancingKing:{
+                name:"武装舞王",
+                hp:120,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/ArmedDancingKing/run/run_0.png",
+                url:"./images/zombies/ArmedDancingKing/run/run_",
+                count:97
+            },
+            ArmedGiant:{
+                name:"武装巨人",
+                hp:200,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/ArmedGiant/run/run_0.png",
+                url:"./images/zombies/ArmedGiant/run/run_",
+                count:97
+            },
+            Balloon:{
+                name:"气球僵尸",
+                hp:100,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/Balloon/run/run_0.png",
+                url:"./images/zombies/Balloon/run/run_",
+                count:79
+            },
+            BedCar:{
+                name:"车床僵尸",
+                hp:100,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/BedCar/run/run_0.png",
+                url:"./images/zombies/BedCar/run/run_",
+                count:93
+            },
+            IronBucket:{
+                name:"铁桶僵尸",
+                hp:150,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/IronBucket/run/run_0.png",
+                url:"./images/zombies/IronBucket/run/run_",
+                count:83
+            },
+            NutJumping:{
+                name:"坚果弹跳",
+                hp:100,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/NutJumping/run/run_0.png",
+                url:"./images/zombies/NutJumping/run/run_",
+                count:91
+            },
+            Imp:{
+                name:"坚果弹跳",
+                hp:60,
+                attack:1,
+                speed:2,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/Imp/run/run_0.png",
+                url:"./images/zombies/Imp/run/run_",
+                count:67
+            },
+            Pajamas:{
+                name:"睡衣僵尸",
+                hp:100,
+                attack:1,
+                speed:1,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/Pajamas/run/run_0.png",
+                url:"./images/zombies/Pajamas/run/run_",
+                count:83
+            },
+            YetiCar:{
+                name:"雪车僵尸",
+                hp:200,
+                attack:1,
+                speed:0.5,
+                speedG:50,
+                range:50,
+                uisrc:"./images/zombies/YetiCar/run/run_0.png",
+                url:"./images/zombies/YetiCar/run/run_",
+                count:96
+            },
         }
         
         // 顶部UI类
@@ -564,22 +674,22 @@
         }
 
         // 定义僵尸类
-        function Zombie(x, y) {
+        function Zombie(x, y, object) {
             this.x = x;
             this.y = y;
             // 僵尸动画属性
             this.Animation = {
-                src:"./images/zombies/run/run_0.png",
-                url:"./images/zombies/run/run_",
-                count:30,
+                src:object.uisrc,
+                url:object.url,
+                count:object.count,
                 num:0,
                 animation:false
             }
-            this.hp = 100; // 血量
-            this.attack = 1; // 攻击力
-            this.speed = 1; // 移动速度
-            this.speedG = 50; // 攻击速度
-            this.range = 50; // 射程
+            this.hp = object.hp; // 血量
+            this.attack = object.attack; // 攻击力
+            this.speed = object.speed; // 移动速度
+            this.speedG = object.speedG; // 攻击速度
+            this.range = object.range; // 射程
             this.rice = false;
             this.lastAttackTime = 0; // 上次攻击时间
             this.element = document.createElement('div'); // 元素节点
@@ -632,13 +742,11 @@
             new ToolBar("00:00","nz"); //游戏时间
 
             // 创建UI标签栏对象实例
-            new Labels(PlantUte.SunFlower); //向日葵
-            new Labels(PlantUte.Peashooter); //初级豌豆射手
-            new Labels(PlantUte.Repeater); //中级豌豆射手
-            new Labels(PlantUte.GatlingPea); //高级豌豆射手
-            // new Labels(PlantUte.CherryBomb); //番茄炸弹
-            // new Labels(PlantUte.Chomper); //食人花
+            new Labels(PlantUte.PeaSunflower); //向日葵
+            new Labels(PlantUte.FumeShroom); //初级豌豆射手
             new Labels(PlantUte.WallNut); //坚果防御
+            new Labels(PlantUte.GarlicFlower); //咖喱食人花
+            new Labels(PlantUte.TripleShooter); //三重射手
         }
 
         // 游戏时间
@@ -665,7 +773,31 @@
                 // 随机生成僵尸
                 if (Math.random() < gameState.pro) {
                     console.log("生成僵尸:",gameState.pro)
-                    new Zombie(1130, parseInt(Math.random()*5)*100+60);
+                    // 生成0-10的随机数，对应随机生成11种僵尸
+                    var num = parseInt(Math.random()*10);
+                    if (num ==  0) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NormalZombie);
+                    } else if (num == 1) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NormalDancingKing);
+                    } else if (num == 2) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.ArmedDancingKing);
+                    } else if (num == 3) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.ArmedGiant);
+                    } else if (num == 4) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Balloon);
+                    } else if (num == 5) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.BedCar);
+                    } else if (num == 6) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.IronBucket);
+                    } else if (num == 7) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NutJumping);
+                    } else if (num == 8) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Imp);
+                    } else if (num == 9) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Pajamas);
+                    } else if (num == 10) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.YetiCar);
+                    }
                 }
 
                 // 选择要种植的植物
@@ -830,13 +962,13 @@
                     gameState.pro = gameState.pro+0.01;
                     console.log("难度升级:",gameState.pro);
                     if(gameState.pro >=0.02){
-                        game.style.backgroundImage = "url(./images/background2.jpg)";
+                        game.style.backgroundImage = "url(./images/background1.jpg)";
                     }
                     if(gameState.pro >=0.04){
                         game.style.backgroundImage = "url(./images/background1.jpg)";
                     }
                     if(gameState.pro >=0.06){
-                        game.style.backgroundImage = "url(./images/background2.jpg)";
+                        game.style.backgroundImage = "url(./images/background1.jpg)";
                     }
                     if(gameState.pro >=0.07){
                         gameState.isOver = "挑战成功";
@@ -879,30 +1011,6 @@
                 gameState.zombies.forEach(function(zombie){
                     if(!zombie.Animation.animation){
                         var zombieSet =  setInterval(function(){
-                            if(zombie.hp>20 && zombie.rice){
-                                zombie.Animation.src = "./images/zombies/attack_0.png";
-                                zombie.Animation.url = "./images/zombies/attack/attack_";
-                                zombie.Animation.count = 20;
-                            }else{
-                                zombie.Animation.src = "./images/zombies/run/run_0.png";
-                                zombie.Animation.url = "./images/zombies/run/run_";
-                                zombie.Animation.count = 30;
-                            }
-                            if(zombie.hp<=20){
-                                zombie.Animation.src = "./images/zombies/dying/body/body_0.png";
-                                zombie.Animation.url = "./images/zombies/dying/body/body_";
-                                zombie.Animation.count = 17;
-                            }
-                            if(zombie.hp<=5){
-                                zombie.Animation.src = "./images/zombies/die/die_0.png";
-                                zombie.Animation.url = "./images/zombies/die/die_";
-                                zombie.Animation.count = 9;
-                            }
-                            if(zombie.hp<=1){
-                                zombie.Animation.src = "./images/zombies/dying/head/head_0.png";
-                                zombie.Animation.url = "./images/zombies/dying/head/head_";
-                                zombie.Animation.count = 11;
-                            }
                             if(zombie.Animation.num<=zombie.Animation.count){
                                 zombie.element2.src = zombie.Animation.url+zombie.Animation.num+".png";
                                 zombie.Animation.num++;
