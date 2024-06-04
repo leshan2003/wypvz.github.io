@@ -275,7 +275,7 @@
             padding-right: 200px;
             font-size: 40px;
             color: white;
-            background-image: url(./images/游戏胜利.png);
+            background-image: url(./images/youwin.png);
             background-size: 1000px;
             background-position: left -200px top -50px;
             background-repeat: no-repeat;
@@ -371,7 +371,7 @@
                 uisrc2:"./images/cards/plants/PeaSunflowerG.png",
                 datasrc:"./images/plants/PeaSunflower/idle/idle_0.png",
                 url:"./images/plants/PeaSunflower/idle/idle_",
-                count:101,
+                count:4,
                 hp:100,
                 attack:5,
                 speed:500,
@@ -385,9 +385,23 @@
                 uisrc2:"./images/cards/plants/FumeShroomG.png",
                 datasrc:"./images/plants/FumeShroom/idle/idle_0.png",
                 url:"./images/plants/FumeShroom/idle/idle_",
-                count:77,
+                count:4,
                 hp:100,
                 attack:10,
+                speed:500,
+                range:500,
+                color:"purple"
+            },
+            PuffShroom:{
+                name:"小喷菇",
+                price:15,
+                uisrc1:"./images/cards/plants/PuffShroom.png",
+                uisrc2:"./images/cards/plants/PuffShroomG.png",
+                datasrc:"./images/plants/PuffShroom/idle/idle_0.png",
+                url:"./images/plants/PuffShroom/idle/idle_",
+                count:4,
+                hp:100,
+                attack:3,
                 speed:500,
                 range:500,
                 color:"purple"
@@ -400,27 +414,12 @@
                 uisrc2:"./images/cards/plants/TripleShooterG.png",
                 datasrc:"./images/plants/TripleShooter/idle/idle_0.png",
                 url:"./images/plants/TripleShooter/idle/idle_",
-                count:90,
+                count:5,
                 hp:100,
                 attack:10,
                 speed:200,
                 range:500,
                 color:"chartreuse"
-            },
-            // 番茄炸弹
-            CherryBomb:{
-                name:"番茄炸弹",
-                price:200,
-                uisrc1:"./images/cards/plants/CherryBomb.png",
-                uisrc2:"./images/cards/plants/CherryBombG.png",
-                datasrc:"./images/plants/cherrybomb/idle/idle_0.png",
-                url:"./images/plants/cherrybomb/idle/idle_",
-                count:6,
-                hp:50,
-                attack:100,
-                speed:1000,
-                range:57,
-                color:"rgba(0,0,0,0)"
             },
             // 咖喱食人花
             GarlicFlower:{
@@ -430,22 +429,22 @@
                 uisrc2:"./images/cards/plants/GarlicFlowerG.png",
                 datasrc:"./images/plants/GarlicFlower/idle/idle_0.png",
                 url:"./images/plants/GarlicFlower/idle/idle_",
-                count:75,
+                count:8,
                 hp:100,
                 attack:20,
                 speed:100,
                 range:57,
                 color:"rgba(0,0,0,0)"
             },
-            // 坚果防御
-            WallNut:{
-                name:"坚果防御",
+            // 火炬坚果
+            TorchNut:{
+                name:"火炬坚果",
                 price:50,
-                uisrc1:"./images/cards/plants/WallNut.png",
-                uisrc2:"./images/cards/plants/WallNutG.png",
-                datasrc:"./images/plants/wallnut/idleH/idleH_0.png",
-                url:"./images/plants/wallnut/idleH/idleH_",
-                count:15,
+                uisrc1:"./images/cards/plants/TorchNut.png",
+                uisrc2:"./images/cards/plants/TorchNutG.png",
+                datasrc:"./images/plants/TorchNut/idle/idle_0.png",
+                url:"./images/plants/TorchNut/idle/idle_",
+                count:6,
                 hp:1000,
                 attack:0,
                 speed:0,
@@ -465,19 +464,7 @@
                 range:50,
                 uisrc:"./images/zombies/Normal/run/run_0.png",
                 url:"./images/zombies/Normal/run/run_",
-                count:30
-            },
-            // 普通舞王
-            NormalDancingKing:{
-                name:"普通舞王",
-                hp:100,
-                attack:1,
-                speed:1,
-                speedG:50,
-                range:50,
-                uisrc:"./images/zombies/NormalDancingKing/run/run_0.png",
-                url:"./images/zombies/NormalDancingKing/run/run_",
-                count:96
+                count:0
             },
             ArmedDancingKing:{
                 name:"武装舞王",
@@ -488,29 +475,7 @@
                 range:50,
                 uisrc:"./images/zombies/ArmedDancingKing/run/run_0.png",
                 url:"./images/zombies/ArmedDancingKing/run/run_",
-                count:97
-            },
-            ArmedGiant:{
-                name:"武装巨人",
-                hp:200,
-                attack:1,
-                speed:1,
-                speedG:50,
-                range:50,
-                uisrc:"./images/zombies/ArmedGiant/run/run_0.png",
-                url:"./images/zombies/ArmedGiant/run/run_",
-                count:97
-            },
-            Balloon:{
-                name:"气球僵尸",
-                hp:100,
-                attack:1,
-                speed:1,
-                speedG:50,
-                range:50,
-                uisrc:"./images/zombies/Balloon/run/run_0.png",
-                url:"./images/zombies/Balloon/run/run_",
-                count:79
+                count:0
             },
             BedCar:{
                 name:"车床僵尸",
@@ -521,18 +486,7 @@
                 range:50,
                 uisrc:"./images/zombies/BedCar/run/run_0.png",
                 url:"./images/zombies/BedCar/run/run_",
-                count:93
-            },
-            IronBucket:{
-                name:"铁桶僵尸",
-                hp:150,
-                attack:1,
-                speed:1,
-                speedG:50,
-                range:50,
-                uisrc:"./images/zombies/IronBucket/run/run_0.png",
-                url:"./images/zombies/IronBucket/run/run_",
-                count:83
+                count:0
             },
             NutJumping:{
                 name:"坚果弹跳",
@@ -543,18 +497,18 @@
                 range:50,
                 uisrc:"./images/zombies/NutJumping/run/run_0.png",
                 url:"./images/zombies/NutJumping/run/run_",
-                count:91
+                count:0
             },
             Imp:{
-                name:"坚果弹跳",
+                name:"小鬼",
                 hp:60,
                 attack:1,
-                speed:2,
+                speed:1.2,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/Imp/run/run_0.png",
                 url:"./images/zombies/Imp/run/run_",
-                count:67
+                count:0
             },
             Pajamas:{
                 name:"睡衣僵尸",
@@ -565,7 +519,7 @@
                 range:50,
                 uisrc:"./images/zombies/Pajamas/run/run_0.png",
                 url:"./images/zombies/Pajamas/run/run_",
-                count:83
+                count:0
             },
             YetiCar:{
                 name:"雪车僵尸",
@@ -576,7 +530,7 @@
                 range:50,
                 uisrc:"./images/zombies/YetiCar/run/run_0.png",
                 url:"./images/zombies/YetiCar/run/run_",
-                count:96
+                count:0
             },
         }
         
@@ -743,8 +697,9 @@
 
             // 创建UI标签栏对象实例
             new Labels(PlantUte.PeaSunflower); //向日葵
-            new Labels(PlantUte.FumeShroom); //初级豌豆射手
-            new Labels(PlantUte.WallNut); //坚果防御
+            new Labels(PlantUte.FumeShroom); //大喷菇
+            new Labels(PlantUte.PuffShroom); //小喷菇
+            new Labels(PlantUte.TorchNut); //坚果防御
             new Labels(PlantUte.GarlicFlower); //咖喱食人花
             new Labels(PlantUte.TripleShooter); //三重射手
         }
@@ -773,30 +728,22 @@
                 // 随机生成僵尸
                 if (Math.random() < gameState.pro) {
                     console.log("生成僵尸:",gameState.pro)
-                    // 生成0-10的随机数，对应随机生成11种僵尸
-                    var num = parseInt(Math.random()*10);
+                    // 生成0-6的随机数，对应随机生成7种僵尸
+                    var num = parseInt(Math.random()*7);
                     if (num ==  0) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NormalZombie);
-                    } else if (num == 1) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NormalDancingKing);
-                    } else if (num == 2) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.ArmedDancingKing);
-                    } else if (num == 3) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.ArmedGiant);
-                    } else if (num == 4) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Balloon);
-                    } else if (num == 5) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.BedCar);
-                    } else if (num == 6) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.IronBucket);
-                    } else if (num == 7) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NutJumping);
-                    } else if (num == 8) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Imp);
-                    } else if (num == 9) {
-                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Pajamas);
-                    } else if (num == 10) {
                         new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.YetiCar);
+                    } else if (num == 1) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.ArmedDancingKing);
+                    } else if (num == 2) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.BedCar);
+                    } else if (num == 3) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NutJumping);
+                    } else if (num == 4) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Pajamas);
+                    } else if (num == 5) {
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.Imp);
+                    } else{
+                        new Zombie(1130, parseInt(Math.random()*5)*100+60, ZombieUte.NormalZombie);
                     }
                 }
 
