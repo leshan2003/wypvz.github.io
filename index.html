@@ -168,8 +168,8 @@
         }
         /* 植物div */
         .plant {
-            width: 80px;
-            height: 100px;
+            width: 120px;
+            height: 150px;
             text-align: center;
             color: rgb(249, 250, 251);
             border: 1px solid #000000;
@@ -182,7 +182,7 @@
         .plantimg{
             width: 80%;
             margin-top: 0px;
-            margin-left: 10px;
+            margin-left: 0px;
             position: absolute;
             top: 25px;
             left: 0;
@@ -260,11 +260,11 @@
         }
         /* 游戏结束 */
         .end{
-            width: 566px;
-            height: 470px;
+            width: 450px;
+            height: 340px;
             position: absolute;
-            top: 50px;
-            left: 400px;
+            top: 130px;
+            left: 475px;
             background-image: url(./images/zombieWon.png);
             border: 1px solid #000;
             border-color: rgba(0, 0, 0,0);
@@ -289,11 +289,11 @@
             padding-top: 308px;
             padding-left: 230px;
             padding-right: 200px;
-            font-size: 40px;
+            font-size: 0px;
             color: white;
-            background-image: url(./images/youwin.png);
-            background-size: 1000px;
-            background-position: left -200px top -50px;
+            background-image: url(./images/youwin0.png);
+            background-size: 500px;
+            background-position: left 0px top -50px;
             background-repeat: no-repeat;
             border: 1px solid #000;
             border-color: rgba(0, 0, 0,0);
@@ -481,7 +481,7 @@
                 name:"普通僵尸",
                 hp:100,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/Normal/run/run_0.png",
@@ -492,7 +492,7 @@
                 name:"武装舞王",
                 hp:120,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/ArmedDancingKing/run/run_0.png",
@@ -503,7 +503,7 @@
                 name:"车床僵尸",
                 hp:100,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/BedCar/run/run_0.png",
@@ -514,7 +514,7 @@
                 name:"坚果弹跳",
                 hp:100,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/NutJumping/run/run_0.png",
@@ -525,7 +525,7 @@
                 name:"小鬼",
                 hp:60,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/Imp/run/run_0.png",
@@ -536,7 +536,7 @@
                 name:"睡衣僵尸",
                 hp:100,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/Pajamas/run/run_0.png",
@@ -547,7 +547,7 @@
                 name:"雪车僵尸",
                 hp:200,
                 attack:1,
-                speed:50,
+                speed:1,
                 speedG:50,
                 range:50,
                 uisrc:"./images/zombies/YetiCar/run/run_0.png",
@@ -759,6 +759,7 @@
             InitUI();
             gameState.startTime1 = Date.now();
             gameState.startTime2 = Date.now();
+            // gameState.isOver = "挑战成功";
             
             // 游戏主循环定时器
             var Appset =  setInterval(function(){
