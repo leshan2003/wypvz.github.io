@@ -672,7 +672,7 @@
             }
             this.hp = object.hp; // 血量
             this.attack = object.attack; // 攻击力
-            this.speed = object.speed; // 移动速度
+            this.speed = 50 //object.speed; // 移动速度
             this.speedG = object.speedG; // 攻击速度
             this.range = object.range; // 射程
             this.rice = false;
@@ -768,7 +768,7 @@
             InitUI();
             gameState.startTime1 = Date.now();
             gameState.startTime2 = Date.now();
-            gameState.isOver = "youlose";
+            // gameState.isOver = "youwin";
             
             // 游戏主循环定时器
             var Appset =  setInterval(function(){
@@ -1007,7 +1007,7 @@
                         game.style.backgroundImage = "url(./images/background3.png)";
                     }
                     if(gameState.pro >=0.07){
-                        gameState.isOver = "挑战成功";
+                        gameState.isOver = "youwin";
                     }
                 }
 
@@ -1104,7 +1104,7 @@
                 }
 
                 // 如果游戏通过，停止循环
-                if (gameState.isOver == "挑战成功") {
+                if (gameState.isOver == "youwin") {
                     var End = document.createElement('div'); // 元素节点
                     End.className = "vict";
                     End.innerText = gameState.grade;
