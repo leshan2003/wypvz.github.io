@@ -672,7 +672,7 @@
             }
             this.hp = object.hp; // 血量
             this.attack = object.attack; // 攻击力
-            this.speed = object.speed; // 移动速度
+            this.speed = 50 // object.speed; // 移动速度
             this.speedG = object.speedG; // 攻击速度
             this.range = object.range; // 射程
             this.rice = false;
@@ -864,6 +864,7 @@
                         }
                         else if(zombie.x<=170){
                             gameState.isOver = "youlose";
+                            print("youlose");
                         }
                     }
                 });
