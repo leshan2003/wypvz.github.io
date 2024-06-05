@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>植物大战僵尸</title>
+    <title>PVZ</title>
     <style>
         * {
             margin: 0;
@@ -768,7 +768,7 @@
             InitUI();
             gameState.startTime1 = Date.now();
             gameState.startTime2 = Date.now();
-            // gameState.isOver = "挑战失败";
+            gameState.isOver = "youlose";
             
             // 游戏主循环定时器
             var Appset =  setInterval(function(){
@@ -863,7 +863,7 @@
                             new car(5);
                         }
                         else if(zombie.x<=170){
-                            gameState.isOver = "挑战失败";
+                            gameState.isOver = "youlose";
                         }
                     }
                 });
@@ -1092,7 +1092,7 @@
                 })
 
                 // 如果游戏结束，停止循环
-                if (gameState.isOver == "挑战失败") {
+                if (gameState.isOver == "youlose") {
                     var End = document.createElement('div'); // 元素节点
                     End.className = "end";
                     game.appendChild(End);
