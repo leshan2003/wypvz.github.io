@@ -260,14 +260,23 @@
         }
         /* 游戏结束 */
         .end{
-            width: 450px;
-            height: 340px;
-            position: absolute;
-            top: 130px;
-            left: 475px;
-            background-image: url(./images/zombieWon.png);
+            width: 566px;
+            height: 470px;
+            text-align: center;
+            padding-top: 308px;
+            padding-left: 230px;
+            padding-right: 200px;
+            font-size: 0px;
+            color: white;
+            background-image: url(./images/LoseAndThanks.png);
+            background-size: 600px;
+            background-position: left 0px top 0px;
+            background-repeat: no-repeat;
             border: 1px solid #000;
             border-color: rgba(0, 0, 0,0);
+            position: absolute;
+            top: 50px;
+            left: 400px;
             animation: end 2s infinite;
         }
         @keyframes end {
@@ -275,7 +284,7 @@
                 transform: scale(1);
             }
             50%{
-                transform: scale(1.1);
+                transform: scale(1.01);
             }
             100%{
                 transform: scale(1);
@@ -291,9 +300,9 @@
             padding-right: 200px;
             font-size: 0px;
             color: white;
-            background-image: url(./images/youwin0.png);
-            background-size: 500px;
-            background-position: left 0px top -50px;
+            background-image: url(./images/WinAndThanks.png);
+            background-size: 600px;
+            background-position: left 0px top 0px;
             background-repeat: no-repeat;
             border: 1px solid #000;
             border-color: rgba(0, 0, 0,0);
@@ -307,7 +316,7 @@
                 transform: scale(1);
             }
             50%{
-                transform: scale(1.1);
+                transform: scale(1.01);
             }
             100%{
                 transform: scale(1);
@@ -759,7 +768,7 @@
             InitUI();
             gameState.startTime1 = Date.now();
             gameState.startTime2 = Date.now();
-            // gameState.isOver = "挑战成功";
+            // gameState.isOver = "挑战失败";
             
             // 游戏主循环定时器
             var Appset =  setInterval(function(){
