@@ -838,7 +838,7 @@
 
                 // 僵尸移动
                 gameState.zombies.forEach(function(zombie) {
-                    if(zombie.x>=180){
+                    if(zombie.x>=170){
                         zombie.x -= zombie.speed;
                         zombie.element.style.left = zombie.x + 'px';
                     }else{
@@ -862,7 +862,7 @@
                             gameState.line5_car = 0;
                             new car(5);
                         }
-                        else if(zombie.x<=170){
+                        else if(zombie.x<170){
                             gameState.isOver = "youlose";
                             print("youlose");
                         }
