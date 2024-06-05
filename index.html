@@ -843,22 +843,37 @@
                         zombie.element.style.left = zombie.x + 'px';
                     }else{
                         if(zombie.y == 60 && gameState.line1_car == 1){
+                            gameState.toolbar[2].element.innerText = ++gameState.grade;
+                            game.removeChild(zombie.element);
+                            gameState.zombies.splice(gameState.zombies.indexOf(zombie), 1);
                             gameState.line1_car = 0;
                             new car(1);
                         }
                         else if(zombie.y == 160 && gameState.line2_car == 1){
+                            gameState.toolbar[2].element.innerText = ++gameState.grade;
+                            game.removeChild(zombie.element);
+                            gameState.zombies.splice(gameState.zombies.indexOf(zombie), 1);
                             gameState.line2_car = 0;
                             new car(2);
                         }
                         else if(zombie.y == 260 && gameState.line3_car == 1){
+                            gameState.toolbar[2].element.innerText = ++gameState.grade;
+                            game.removeChild(zombie.element);
+                            gameState.zombies.splice(gameState.zombies.indexOf(zombie), 1);
                             gameState.line3_car = 0;
                             new car(3);
                         }
                         else if(zombie.y == 360 && gameState.line4_car == 1){
+                            gameState.toolbar[2].element.innerText = ++gameState.grade;
+                            game.removeChild(zombie.element);
+                            gameState.zombies.splice(gameState.zombies.indexOf(zombie), 1);
                             gameState.line4_car = 0;
                             new car(4);
                         }
                         else if(zombie.y == 460 && gameState.line5_car == 1){
+                            gameState.toolbar[2].element.innerText = ++gameState.grade;
+                            game.removeChild(zombie.element);
+                            gameState.zombies.splice(gameState.zombies.indexOf(zombie), 1);
                             gameState.line5_car = 0;
                             new car(5);
                         }
